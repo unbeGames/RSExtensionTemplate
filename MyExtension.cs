@@ -2,7 +2,7 @@
 using UnbeGames.Support;
 
 namespace Extension {
-  public class MyExtension : BaseExtention {
+  public class MyExtension : BaseExtension {
     public MyExtension() {
       Log.Info($"Extention initialized");
     }    
