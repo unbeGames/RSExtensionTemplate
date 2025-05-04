@@ -1,4 +1,4 @@
-This is a template project for [Rocket Science](https://store.steampowered.com/app/890520) extensions.
+This is a template project for [Rocket Science](https://store.steampowered.com/app/890520) extensions. *Note*: extension support was added in the v0.24.x version of the game (it is currently not released to public).
 
 ## Getting started
 
@@ -13,7 +13,5 @@ Don't forget to rename project and `MyExtension.cs` file to something more meani
 
 ## Structure
 
-You need to inherit you first class from `BaseExtention` class from `UnbeGames.API` namespace for your extension to be recognized by the game. This template already
-contains such class in the `MyExtension.cs`, but you can create your one and have more than one in the project.
-This will be an entry point to your extension. The next step is to override some virtual methods provided in the `BaseExtention` class depending on what you want.
+You need to inherit you first class from `BaseExtention` class from `UnbeGames.API` namespace for your extension to be recognized by the game. This template already contains such class in the `MyExtension.cs`, but you can create your one and have more than one in the project. This will be an entry point to your extension. The next step is to override some virtual methods provided in the `BaseExtention` class depending on what you want.
 
