@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
 		<GamePath>E:\SteamLibrary\steamapps\common\HDYLIEM</GamePath>
 		<AssemblyPath>\Rocket Science_Data\Managed</AssemblyPath>
+		<Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
