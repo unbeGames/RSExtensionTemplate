@@ -16,8 +16,8 @@ Don't forget to rename project and `MyExtension.cs` file to something more meani
 You need to inherit you first class from `BaseExtention` class from `UnbeGames.API` namespace for your extension to be recognized by the game. This template already contains such class in the `MyExtension.cs`, but you can create your one and have more than one in the project. This will be an entry point to your extension. The next step is to override some virtual methods provided in the `BaseExtention` class depending on what you want. Here are those methods:
 
 - `OnStart` is called after all game systems and other extentions were loaded and initialized;
-- `OnEnable` is called when mod was enabled by player or right after initialization if it was already enabled;
-- `OnDisable` is called when mod was disabled by the player from the mods window;
+- `OnEnable` is called when extension was enabled by player or right after initialization if it was already enabled;
+- `OnDisable` is called when extension was disabled by the player from the mods window;
 - `OnGameLoad` is called after game save was loaded;
 - `OnGameShutdown` is called right after game was unloaded.
 
@@ -27,5 +27,5 @@ There are three more methods to override. Those are game loop callbacks:
 - `Update` standard Unity callback, called every frame;
 - `LateUpdate` standard Unity callback, called every frame right before rendering starts.
 
-**Note**: that if any of those overriden methods throw an exception at any point, your mod will be automatically deregistered and will not continue to receive method calls from the game. You need to handle all exceptions or better, just prevent them from happening at all, because an exceotion handling is very slow.
+**Note**: that if any of those overriden methods throw an exception at any point, your extension will be automatically deregistered and will not continue to receive method calls from the game. You need to handle all exceptions or better, just prevent them from happening at all, because an exceotion handling is very slow.
 
