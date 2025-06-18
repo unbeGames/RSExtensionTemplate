@@ -19,7 +19,7 @@ You need to inherit you first class from `BaseExtention` class from `UnbeGames.A
 - `OnEnable` is called when mod was enabled by player or right after initialization if it was already enabled;
 - `OnDisable` is called when mod was disabled by the player from the mods window;
 - `OnGameLoad` is called after game save was loaded;
-- `OnGameLoad` is called right after game was unloaded.
+- `OnGameShutdown` is called right after game was unloaded.
 
 There are three more methods to override. Those are game loop callbacks:
 
